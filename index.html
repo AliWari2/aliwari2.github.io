@@ -3,133 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Personnel</title>
+    <title>Ali Wari - Ingénieur Logiciel</title>
     <style>
-        /* Style général */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
             color: #fff;
-            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            height: 100vh;
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        header {
+            text-align: center;
+            margin-bottom: 50px;
         }
 
-        p {
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
             font-size: 1.2em;
-            margin-bottom: 20px;
-            line-height: 1.5;
             max-width: 600px;
+            margin: 10px auto;
+            line-height: 1.5;
         }
 
-        /* Conteneur des boutons */
         .button-container {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
             gap: 15px;
-            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        /* Boutons */
         .button {
-            display: inline-block;
-            background: #ffffff;
-            color: #2575fc;
-            padding: 15px 25px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 50px;
+            background: #fff;
+            color: #1e3c72;
             text-decoration: none;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .button:hover {
-            background: #2575fc;
+            background: #1e3c72;
             color: #fff;
             transform: translateY(-3px);
-            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Section dynamique */
-        .content-section {
-            display: none;
-            background: rgba(255, 255, 255, 0.9);
-            color: #333;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-            text-align: left;
         }
 
         footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.7);
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon site personnel</h1>
-    <p>
-        Je suis étudiant en Master 1 d'Ingénierie Logicielle, passionné par le développement logiciel et les technologies 
-        innovantes. Découvrez mes projets, mes compétences et mes expériences ci-dessous.
-    </p>
-
-    <div class="button-container">
-        <button class="button" onclick="toggleSection('apropos')">À propos</button>
-        <a href="https://github.com/votre-nom" class="button" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/votre-nom" class="button" target="_blank">LinkedIn</a>
-        <a href="https://votre-cv-link.com" class="button" target="_blank">CV</a>
-        <button class="button" onclick="toggleSection('stage')">Stage</button>
-    </div>
-
-    <div id="apropos" class="content-section">
-        <h2>À propos de moi</h2>
+    <header>
+        <h1>Ali Wari</h1>
         <p>
-            Je suis titulaire d'une licence en informatique obtenue à l'Université de Bretagne Occidentale. Actuellement, je poursuis un Master 1 en ingénierie logicielle, un domaine qui m'a toujours fasciné. Mon intérêt pour l'informatique a commencé dès mon plus jeune âge, en observant mon grand frère travailler sur des projets de programmation. Cette curiosité s'est transformée en une véritable passion, m'amenant à développer des compétences approfondies et une méthodologie basée sur la curiosité, l'organisation et la rigueur.
+            Étudiant en Master 1 Ingénierie Logicielle, passionné par le développement logiciel et les nouvelles technologies. Explorez mes compétences, projets et expériences !
         </p>
+    </header>
+    <div class="button-container">
+        <a href="apropos.html" class="button">À propos</a>
+        <a href="stage.html" class="button">Stage</a>
+        <a href="https://github.com/AliWari2" class="button" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ali-wari-2a70a2272/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://votre-cv-link.com" class="button" target="_blank">CV</a>
     </div>
-
-    <div id="stage" class="content-section">
-        <h2>Stage L3 Informatique</h2>
-        <p><strong>Développeur web PHP :</strong> création d'un site web de gestion et de vente de produits pour la boulangerie “M’hira boulangerie”.</p>
-        <ul>
-            <li>Participation à l'élaboration des cahiers des charges, conception et gestion de la base de données.</li>
-            <li>Rédaction de rapports et comptes rendus relatifs à notre progression.</li>
-            <li><strong>Technologies utilisées :</strong> PHP, CodeIgniter, Bootstrap, HTML/CSS, JavaScript.</li>
-        </ul>
-    </div>
-
-    <footer>&copy; 2024 | Créé par Ali Wari</footer>
-
-    <script>
-        function toggleSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section.style.display === 'none' || section.style.display === '') {
-                // Masquer les autres sections
-                document.querySelectorAll('.content-section').forEach(sec => sec.style.display = 'none');
-                // Afficher la section demandée
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
-        }
-    </script>
+    <footer>
+        &copy; 2024 | Créé par Ali Wari
+    </footer>
 </body>
 </html>
