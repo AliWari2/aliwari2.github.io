@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portofoliio </title>
+    <title>Mon Site Personnel</title>
     <style>
-        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -17,8 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
         }
 
         h1 {
@@ -33,8 +31,6 @@
             line-height: 1.5;
             max-width: 600px;
         }
-
-        
         .button {
             display: inline-block;
             background: #ffffff;
@@ -47,6 +43,7 @@
             text-decoration: none;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease-in-out;
+            cursor: pointer;
         }
 
         .button:hover {
@@ -55,25 +52,57 @@
             transform: translateY(-3px);
             box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
         }
+        #stage-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+        }
 
-        
         footer {
-            position: absolute;
-            bottom: 10px;
+            margin-top: 20px;
             font-size: 0.9em;
             color: rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon portofolio </h1>
+    <h1>Bienvenue sur mon site personnel</h1>
     <p>
-        Etudiant en Master 1 d'Ingénierie Logicielle, passionné par le développement logiciel et les technologies 
-        innovantes. Découvrez mes projets, mes compétences et mes profils professionnels en cliquant sur les liens ci-dessous.
+        Je suis étudiant en Master 1 d'Ingénierie Logicielle, passionné par le développement logiciel et les technologies 
+        innovantes. Découvrez mes projets, mes compétences et mes expériences ci-dessous.
     </p>
+    <a href="#apropos" class="button">À propos</a>
     <a href="https://github.com/AliWari2" class="button" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/ali-wari-2a70a2272/" class="button" target="_blank">LinkedIn</a>
-    <a href="https://votre-cv-link.com" class="button" target="_blank">Mon CV</a>
+    <a href="https://votre-cv-link.com" class="button" target="_blank">CV</a>
+    <button class="button" onclick="toggleStage()">Stage</button>
+
+    <div id="stage-section">
+        <h2>Stage L3 Informatique</h2>
+        <p><strong>Développeur web PHP :</strong> création d'un site web de gestion et de vente de produits pour la boulangerie “M’hira boulangerie”.</p>
+        <ul>
+            <li>Participation à l'élaboration des cahiers des charges, conception et gestion de la base de données.</li>
+            <li>Rédaction de rapports et comptes rendus relatifs à notre progression.</li>
+            <li><strong>Technologies utilisées :</strong> PHP, CodeIgniter, Bootstrap, HTML/CSS, JavaScript.</li>
+        </ul>
+    </div>
+
     <footer>&copy; 2024 | Créé par Ali Wari</footer>
+
+    <script>
+        function toggleStage() {
+            const stageSection = document.getElementById('stage-section');
+            if (stageSection.style.display === 'none' || stageSection.style.display === '') {
+                stageSection.style.display = 'block';
+            } else {
+                stageSection.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
