@@ -3,46 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Personnel</title>
+    <title>Mon Portofoliio </title>
     <style>
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+            color: #fff;
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
         h1 {
-            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         p {
-            color: #555;
-            font-size: 18px;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            max-width: 600px;
         }
 
+        
         .button {
             display: inline-block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 32px;
+            background: #ffffff;
+            color: #2575fc;
+            padding: 15px 25px;
             font-size: 16px;
+            font-weight: bold;
             margin: 10px;
-            border-radius: 5px;
+            border-radius: 50px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
         }
 
         .button:hover {
-            background-color: #45a049;
+            background: #2575fc;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon site personnel</h1>
-    <p>Je suis étudiant en Master 1 d'Ingénierie Logicielle, passionné par le développement logiciel et les technologies innovantes. Explorez mes projets et mes profils professionnels pour en savoir plus sur mon parcours et mes compétences.</p>
+    <h1>Bienvenue sur mon portofolio </h1>
+    <p>
+        Etudiant en Master 1 d'Ingénierie Logicielle, passionné par le développement logiciel et les technologies 
+        innovantes. Découvrez mes projets, mes compétences et mes profils professionnels en cliquant sur les liens ci-dessous.
+    </p>
     <a href="https://github.com/votre-nom" class="button" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/votre-nom" class="button" target="_blank">LinkedIn</a>
     <a href="https://votre-cv-link.com" class="button" target="_blank">Mon CV</a>
+    <footer>&copy; 2024 | Créé par Ali Wari</footer>
 </body>
 </html>
