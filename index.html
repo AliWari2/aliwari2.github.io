@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Wari - Ingénieur Logiciel</title>
     <style>
-        /* Reset */
+        /* Reset & Base Styling */
         * {
             margin: 0;
             padding: 0;
@@ -13,85 +13,84 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: #fff;
+            text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             min-height: 100vh;
-            text-align: center;
-            overflow: hidden;
         }
 
+        /* Header Styling */
         header {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            text-align: center;
         }
 
-        h1 {
-            font-size: 3em;
-            font-weight: 700;
-            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-            animation: fadeInDown 1.5s ease-out;
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
         }
 
-        p {
-            font-size: 1.2em;
-            margin: 20px auto;
-            max-width: 600px;
+        header p {
+            font-size: 1.3em;
             line-height: 1.6;
-            animation: fadeIn 2s ease-out;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
+        /* Button Container Styling */
         .button-container {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
-            animation: fadeInUp 2.5s ease-out;
+            margin-top: 30px;
         }
 
+        /* Button Styling */
         .button {
-            background: rgba(255, 255, 255, 0.9);
-            color: #1e3c72;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
             padding: 15px 30px;
-            border-radius: 30px;
             font-size: 1.1em;
             font-weight: bold;
             text-decoration: none;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease-in-out;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
         }
 
         .button:hover {
-            background: #1e3c72;
-            color: #fff;
+            background: rgba(255, 255, 255, 0.3);
+            border-color: #fff;
             transform: translateY(-5px);
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
 
+        /* Footer Styling */
         footer {
             position: absolute;
-            bottom: 20px;
+            bottom: 10px;
             font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.7);
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        footer a {
+            color: #b3d4fc;
+            text-decoration: none;
         }
 
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -99,20 +98,20 @@
     <header>
         <h1>Ali Wari</h1>
         <p>
-            Bienvenue sur mon site personnel. Étudiant en Master 1 d'Ingénierie Logicielle, je suis passionné par le développement logiciel et les nouvelles technologies. Explorez mes compétences, projets et expériences ci-dessous.
+            Étudiant en Master 1 Ingénierie Logicielle, passionné par le développement logiciel et les technologies innovantes. Découvrez mes projets, compétences, et expériences en cliquant sur les boutons ci-dessous.
         </p>
     </header>
 
     <div class="button-container">
         <a href="apropos.html" class="button">À propos</a>
-        <a href="cv.html" class="button">CV</a>
         <a href="stage.html" class="button">Stage</a>
-        <a href="https://github.com/Aliwari2" class="button" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/aliwari" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AliWari2" class="button" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/votre-nom" class="button" target="_blank">LinkedIn</a>
+        <a href="cv.html" class="button">CV</a>
     </div>
 
     <footer>
-        &copy; 2024 | Créé par Ali Wari
+        &copy; 2024 | Créé par <a href="#">Ali Wari</a>
     </footer>
 </body>
 </html>
