@@ -5,67 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Wari - Ingénieur Logiciel</title>
     <style>
-        body {
+        /* Reset */
+        * {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: #fff;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow: hidden;
         }
 
         header {
-            text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
-        header h1 {
+        h1 {
             font-size: 3em;
-            margin: 0;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeInDown 1.5s ease-out;
         }
 
-        header p {
+        p {
             font-size: 1.2em;
+            margin: 20px auto;
             max-width: 600px;
-            margin: 10px auto;
-            line-height: 1.5;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-out;
         }
 
         .button-container {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
+            animation: fadeInUp 2.5s ease-out;
         }
 
         .button {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
             color: #1e3c72;
-            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
             font-size: 1.1em;
             font-weight: bold;
-            padding: 15px 30px;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
         }
 
         .button:hover {
             background: #1e3c72;
             color: #fff;
-            transform: translateY(-3px);
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
         }
 
         footer {
             position: absolute;
-            bottom: 10px;
-            font-size: 0.8em;
-            color: rgba(255, 255, 255, 0.7);
+            bottom: 20px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -73,17 +99,18 @@
     <header>
         <h1>Ali Wari</h1>
         <p>
-            Étudiant en Master 1 Ingénierie Logicielle, passionné par le développement logiciel et les nouvelles technologies. Explorez mes compétences, projets et expériences !
+            Bienvenue sur mon site personnel. Étudiant en Master 1 d'Ingénierie Logicielle, je suis passionné par le développement logiciel et les nouvelles technologies. Explorez mes compétences, projets et expériences ci-dessous.
         </p>
     </header>
+
     <div class="button-container">
         <a href="apropos.html" class="button">À propos</a>
-        <a href="stage.html" class="button">Stage</a>
-        <a href="https://github.com/AliWari2" class="button" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/ali-wari-2a70a2272/" class="button" target="_blank">LinkedIn</a>
         <a href="cv.html" class="button">CV</a>
-
+        <a href="stage.html" class="button">Stage</a>
+        <a href="https://github.com/Aliwari2" class="button" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/aliwari" class="button" target="_blank">LinkedIn</a>
     </div>
+
     <footer>
         &copy; 2024 | Créé par Ali Wari
     </footer>
