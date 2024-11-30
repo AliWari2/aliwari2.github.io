@@ -9,68 +9,144 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            background: linear-gradient(to bottom, #2c3e50, #4ca1af);
             color: #fff;
-            padding: 40px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            line-height: 1.6;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #f39c12;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         p {
             font-size: 1.2em;
-            line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             text-align: justify;
+            margin: 20px 0;
+            color: #ecf0f1;
+        }
+
+        strong {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+            text-align: left;
         }
 
         a {
-            color: #fff;
-            text-decoration: underline;
-            margin-top: 20px;
+            color: #f39c12;
+            text-decoration: none;
             font-weight: bold;
             font-size: 1.1em;
+            margin-top: 30px;
+            display: inline-block;
+            border: 2px solid #f39c12;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         a:hover {
-            color: #b3d4fc;
+            background-color: #f39c12;
+            color: #fff;
         }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .section ul li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: #f39c12;
+        }
+
     </style>
 </head>
 <body>
-    <h1>À propos</h1>
-    <p>
-        <strong>Parcours académique et formation</strong>
-Je suis titulaire d’une licence en informatique, obtenue à l’Université de Bretagne Occidentale, une formation qui m’a permis de consolider mes bases en développement, en algorithmique et en gestion des systèmes informatiques. Cette licence a été le point de départ de mon immersion approfondie dans le monde de l’informatique, avec des cours pratiques et théoriques qui m’ont apporté une solide compréhension des fondamentaux du métier.
 
-Actuellement, je poursuis un Master 1 en ingénierie logicielle, un domaine qui m’a toujours fasciné par ses multiples défis et ses possibilités d’innovation. Cette spécialisation me permet d'approfondir mes connaissances en architecture logicielle, en développement de logiciels complexes et en gestion de projets, tout en maîtrisant les outils et technologies nécessaires pour évoluer dans un environnement professionnel exigeant.
+    <h1>À propos de moi</h1>
 
-        <strong>Compétences développées au fil du temps</strong>
-Mon parcours académique et personnel m’a permis de développer des compétences approfondies dans plusieurs domaines clés de l’informatique :
+    <div class="content-container">
+        <div class="section">
+            <h2>Parcours académique et formation</h2>
+            <p>
+                Je suis titulaire d’une <strong>licence en informatique</strong>, obtenue à l’Université de Bretagne Occidentale. Cette formation m’a permis de consolider mes bases en développement, en algorithmique et en gestion des systèmes informatiques. Elle a marqué le début de mon immersion dans le monde de l’informatique, avec des cours à la fois pratiques et théoriques qui m’ont donné une solide compréhension des fondamentaux du métier.
+            </p>
+            <p>
+                Actuellement, je poursuis un <strong>Master 1 en ingénierie logicielle</strong>, un domaine qui m’a toujours fasciné par ses défis et ses possibilités d’innovation. Cette spécialisation me permet de perfectionner mes connaissances en architecture logicielle, en développement de logiciels complexes et en gestion de projets tout en maîtrisant les outils et technologies nécessaires pour évoluer dans un environnement professionnel exigeant.
+            </p>
+        </div>
 
-Développement logiciel : J’ai acquis une maîtrise des langages tels que Java, C, PHP, et JavaScript, ainsi que des frameworks associés comme React et Node.js.
-Gestion de bases de données : Mon expertise en SQL et l’utilisation de bases de données comme SQL Server me permettent de concevoir des solutions robustes et performantes.
-Méthodologie et organisation : Mon approche est fondée sur la curiosité, l’organisation et la rigueur. J’accorde une grande importance à la structure et à la qualité du code, ainsi qu’à la documentation claire et précise des projets sur lesquels je travaille.
+        <div class="section">
+            <h2>Compétences développées</h2>
+            <p>Mon parcours académique et personnel m’a permis de développer des compétences approfondies dans plusieurs domaines clés de l’informatique :</p>
+            <ul>
+                <li><strong>Développement logiciel :</strong> Maîtrise des langages Java, C, PHP, JavaScript, ainsi que des frameworks tels que React et Node.js.</li>
+                <li><strong>Gestion de bases de données :</strong> Expertise en SQL, conception et gestion de bases de données avec SQL Server et autres SGBD relationnels.</li>
+                <li><strong>Méthodologie et organisation :</strong> Une approche rigoureuse, fondée sur la curiosité, l’organisation et la rigueur. Je mets un point d’honneur à structurer le code et à assurer une documentation précise des projets.</li>
+            </ul>
+        </div>
 
-        <strong>Une méthodologie basée sur la curiosité, l'organisation et la rigueur</strong>
-Ces trois qualités sont les piliers de ma démarche professionnelle :
+        <div class="section">
+            <h2>Ma méthodologie</h2>
+            <p>
+                Ma démarche professionnelle repose sur trois valeurs essentielles : <strong>curiosité</strong>, <strong>organisation</strong> et <strong>rigueur</strong>.
+            </p>
+            <ul>
+                <li><strong>Curiosité :</strong> Toujours à la recherche de nouvelles technologies et méthodologies, je m'efforce de rester à jour avec les évolutions du secteur pour offrir des solutions innovantes.</li>
+                <li><strong>Organisation :</strong> La planification et la gestion du temps sont essentielles pour moi. Je structure chaque projet en étapes claires pour assurer une progression régulière et maîtrisée.</li>
+                <li><strong>Rigueur :</strong> Attentif aux détails dans le code, la documentation et la gestion des bases de données, je veille à ce que chaque projet soit de qualité optimale et fiable.</li>
+            </ul>
+        </div>
 
-Curiosité : J’aime explorer de nouvelles technologies et méthodologies. Cette curiosité me pousse à rester à jour avec les évolutions du secteur et à toujours chercher des solutions innovantes aux problèmes complexes.
-Organisation : J’accorde une grande importance à la planification et à la gestion du temps. Chaque projet que je mène est structuré en étapes claires, avec des objectifs définis pour garantir une progression régulière.
-Rigueur : Je suis particulièrement attentif aux détails, que ce soit dans l’écriture du code, la documentation ou la gestion des bases de données. Mon objectif est toujours d’assurer la qualité et la fiabilité des solutions développées.
+        <div class="section">
+            <h2>Motivation pour l’avenir</h2>
+            <p>
+                Aujourd’hui, je suis déterminé à exceller dans le domaine de l’ingénierie logicielle. Mon parcours, combiné à ma passion et ma méthodologie de travail, me permet de relever les défis techniques avec confiance. Chaque projet représente une opportunité d’apprentissage, et je suis prêt à m’investir pleinement dans des projets ambitieux et innovants.
+            </p>
+            <p>
+                Pour moi, l’informatique n’est pas simplement un domaine d’étude, c’est une véritable vocation. Je suis enthousiaste à l’idée de continuer à approfondir mes compétences et de mettre à profit mon expertise pour relever les défis de l’ingénierie logicielle.
+            </p>
+        </div>
 
-        <strong>Motivation pour l’avenir</strong>
-Aujourd’hui, je suis déterminé à exceller dans le domaine de l’ingénierie logicielle. Mon parcours, combiné à ma passion et à ma méthodologie de travail, me permet de relever les défis techniques avec confiance. Chaque projet est une opportunité d’apprentissage et d’amélioration, et je suis prêt à m’investir pleinement pour contribuer à des projets ambitieux et innovants.
+        <a href="index.html">Retour à la page d'accueil</a>
+    </div>
 
-En résumé, l’informatique n’est pas simplement un domaine d’étude pour moi, mais une véritable vocation. Je suis enthousiaste à l’idée de continuer à approfondir mes compétences et de mettre à profit mon expertise pour relever les défis de l’ingénierie logicielle.
-    </p>
-    <a href="index.html">Retour à la page d'accueil</a>
 </body>
 </html>
