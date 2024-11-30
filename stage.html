@@ -9,112 +9,140 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            background: linear-gradient(to bottom, #2a5298, #1e3c72);
             color: #fff;
             padding: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            height: 100vh;
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         p, ul {
             font-size: 1.2em;
-            line-height: 1.6;
-            max-width: 800px;
+            line-height: 1.8;
+            max-width: 900px;
             text-align: justify;
+            margin-bottom: 20px;
         }
 
         ul {
-            margin-top: 20px;
+            margin-top: 10px;
             list-style: none;
             padding: 0;
+            font-size: 1.1em;
         }
 
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-align: left;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #b3d4fc;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
 
         a {
             color: #fff;
-            text-decoration: underline;
-            margin-top: 20px;
+            text-decoration: none;
+            margin-top: 30px;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #1e3c72;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         a:hover {
-            color: #b3d4fc;
+            background-color: #b3d4fc;
+            color: #2a5298;
+        }
+
+        .section {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .section p {
+            text-align: justify;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <h1>Stage de Développement Web PHP : Création d'un site de gestion et de vente pour la boulangerie “M’hira Boulangerie”</h1>
-    <p>Dans le cadre de mon stage de fin de <strong>licence en informatique</strong>, j’ai eu l'opportunité de travailler en tant que <strong>développeur web PHP</strong> pour la création d’un <strong>site de gestion et de vente en ligne</strong> pour la boulangerie <strong>“M’hira Boulangerie”</strong>. Ce projet m’a permis de développer une application web complète, répondant aux besoins spécifiques d'une entreprise locale cherchant à moderniser sa gestion de produits et ses ventes. Voici une description détaillée des différentes missions et compétences que j'ai acquises lors de ce stage.</p>
+    <div class="container">
+        <h1>Stage de Développement Web PHP : Création d'un site de gestion et de vente pour la boulangerie “M’hira Boulangerie”</h1>
+        <p>Dans le cadre de mon stage de fin de <strong>licence en informatique</strong>, j’ai eu l'opportunité de travailler en tant que <strong>développeur web PHP</strong> pour la création d’un <strong>site de gestion et de vente en ligne</strong> pour la boulangerie <strong>“M’hira Boulangerie”</strong>. Ce projet m’a permis de développer une application web complète, répondant aux besoins spécifiques d'une entreprise locale cherchant à moderniser sa gestion de produits et ses ventes. Voici une description détaillée des différentes missions et compétences que j'ai acquises lors de ce stage.</p>
 
-    <h2>1. Participation à l'élaboration des cahiers des charges</h2>
-    <p>La première étape du projet a été de participer à l'élaboration des <strong>cahiers des charges</strong>, un document essentiel pour définir les besoins du client et les spécifications fonctionnelles du site. En collaboration avec le client, nous avons déterminé :</p>
-    <ul>
-        <li>Les fonctionnalités nécessaires pour la gestion des produits (ajout, modification, suppression).</li>
-        <li>Les fonctionnalités de vente en ligne (gestion des commandes, intégration d’un panier, paiement sécurisé).</li>
-        <li>Les besoins en gestion des utilisateurs (administrateurs, clients, etc.).</li>
-        <li>Les exigences concernant l’interface utilisateur (facilité d’utilisation, accessibilité, design responsive).</li>
-    </ul>
-    <p>L'élaboration de ce cahier des charges m'a permis de comprendre l’importance de clarifier les attentes avant de commencer le développement, afin d’éviter toute ambiguïté et de mieux structurer le travail à venir.</p>
+        <div class="section">
+            <h2>1. Participation à l'élaboration des cahiers des charges</h2>
+            <p>La première étape du projet a été de participer à l'élaboration des <strong>cahiers des charges</strong>, un document essentiel pour définir les besoins du client et les spécifications fonctionnelles du site. En collaboration avec le client, nous avons déterminé :</p>
+            <ul>
+                <li>Les fonctionnalités nécessaires pour la gestion des produits (ajout, modification, suppression).</li>
+                <li>Les fonctionnalités de vente en ligne (gestion des commandes, intégration d’un panier, paiement sécurisé).</li>
+                <li>Les besoins en gestion des utilisateurs (administrateurs, clients, etc.).</li>
+                <li>Les exigences concernant l’interface utilisateur (facilité d’utilisation, accessibilité, design responsive).</li>
+            </ul>
+            <p>L'élaboration de ce cahier des charges m'a permis de comprendre l’importance de clarifier les attentes avant de commencer le développement, afin d’éviter toute ambiguïté et de mieux structurer le travail à venir.</p>
+        </div>
 
-    <h2>2. Conception et gestion de la base de données</h2>
-    <p>Une autre mission clé a été la <strong>conception et la gestion de la base de données</strong>. Dans cette partie du projet, j'ai travaillé à la création de la base de données qui allait supporter les informations essentielles du site, telles que :</p>
-    <ul>
-        <li>Les produits (nom, description, prix, stock, catégorie).</li>
-        <li>Les utilisateurs (administrateurs, clients).</li>
-        <li>Les commandes (produits commandés, quantité, montant total, statut de la commande).</li>
-        <li>Les paiements (détails de la transaction, méthode de paiement).</li>
-    </ul>
-    <p>J’ai utilisé <strong>MySQL</strong> pour concevoir la structure de la base de données et mettre en place des tables relationnelles optimisées. J'ai également écrit des requêtes SQL pour la gestion des transactions, l’ajout et la mise à jour des produits, ainsi que pour la récupération des informations nécessaires aux utilisateurs et aux administrateurs. Cette expérience m'a permis de me perfectionner dans la <strong>modélisation des bases de données</strong> et d’apprendre à optimiser les requêtes pour garantir des performances optimales du site.</p>
+        <div class="section">
+            <h2>2. Conception et gestion de la base de données</h2>
+            <p>Une autre mission clé a été la <strong>conception et la gestion de la base de données</strong>. Dans cette partie du projet, j'ai travaillé à la création de la base de données qui allait supporter les informations essentielles du site, telles que :</p>
+            <ul>
+                <li>Les produits (nom, description, prix, stock, catégorie).</li>
+                <li>Les utilisateurs (administrateurs, clients).</li>
+                <li>Les commandes (produits commandés, quantité, montant total, statut de la commande).</li>
+                <li>Les paiements (détails de la transaction, méthode de paiement).</li>
+            </ul>
+            <p>J’ai utilisé <strong>MySQL</strong> pour concevoir la structure de la base de données et mettre en place des tables relationnelles optimisées. J'ai également écrit des requêtes SQL pour la gestion des transactions, l’ajout et la mise à jour des produits, ainsi que pour la récupération des informations nécessaires aux utilisateurs et aux administrateurs. Cette expérience m'a permis de me perfectionner dans la <strong>modélisation des bases de données</strong> et d’apprendre à optimiser les requêtes pour garantir des performances optimales du site.</p>
+        </div>
 
-    <h2>3. Développement du site avec PHP et CodeIgniter</h2>
-    <p>En tant que développeur web PHP, j'ai utilisé le <strong>framework CodeIgniter</strong> pour structurer le développement de l'application. Ce choix de framework m’a permis de bénéficier d’un environnement robuste pour :</p>
-    <ul>
-        <li>Créer des <strong>contrôleurs</strong> et des <strong>modèles</strong> pour la gestion des utilisateurs, des produits et des commandes.</li>
-        <li>Utiliser des <strong>vues</strong> pour afficher dynamiquement les pages du site en fonction des données récupérées de la base de données.</li>
-        <li>Mettre en place une <strong>gestion des sessions utilisateurs</strong>, permettant aux clients de se connecter et de suivre leurs commandes en temps réel.</li>
-    </ul>
-    <p>Le framework <strong>CodeIgniter</strong> m'a facilité la gestion de l’architecture MVC (Modèle-Vue-Contrôleur), et m’a permis de respecter une <strong>approche modulaire</strong> pour améliorer la maintenance et l’évolutivité du projet.</p>
+        <div class="section">
+            <h2>3. Développement du site avec PHP et CodeIgniter</h2>
+            <p>En tant que développeur web PHP, j'ai utilisé le <strong>framework CodeIgniter</strong> pour structurer le développement de l'application. Ce choix de framework m’a permis de bénéficier d’un environnement robuste pour :</p>
+            <ul>
+                <li>Créer des <strong>contrôleurs</strong> et des <strong>modèles</strong> pour la gestion des utilisateurs, des produits et des commandes.</li>
+                <li>Utiliser des <strong>vues</strong> pour afficher dynamiquement les pages du site en fonction des données récupérées de la base de données.</li>
+                <li>Mettre en place une <strong>gestion des sessions utilisateurs</strong>, permettant aux clients de se connecter et de suivre leurs commandes en temps réel.</li>
+            </ul>
+            <p>Le framework <strong>CodeIgniter</strong> m'a facilité la gestion de l’architecture MVC (Modèle-Vue-Contrôleur), et m’a permis de respecter une <strong>approche modulaire</strong> pour améliorer la maintenance et l’évolutivité du projet.</p>
+        </div>
 
-    <h2>4. Interface utilisateur : Utilisation de Bootstrap, HTML/CSS et JavaScript</h2>
-    <p>Pour le <strong>design et l’interface utilisateur</strong>, j’ai utilisé <strong>Bootstrap</strong> afin de rendre le site <strong>responsive</strong> et compatible avec tous les appareils (ordinateurs, tablettes, smartphones). Cela a permis aux utilisateurs de naviguer confortablement, peu importe la taille de l'écran. </p>
-    <p><strong>HTML/CSS</strong> ont été utilisés pour structurer et styliser les pages, en accord avec la charte graphique de la boulangerie. J'ai veillé à créer des interfaces claires et intuitives pour faciliter l’expérience utilisateur, que ce soit pour la gestion des produits par les administrateurs ou la navigation des clients sur la boutique en ligne.</p>
-    <p><strong>JavaScript</strong> a été utilisé pour rendre certaines interactions plus dynamiques, comme l’ajout de produits au panier, la mise à jour des quantités, et la gestion des formulaires de commande.</p>
-    <p>J’ai également mis en place des <strong>validations côté client</strong> avec JavaScript, afin de garantir que les utilisateurs saisissent des informations correctes avant de soumettre un formulaire, réduisant ainsi les erreurs côté serveur.</p>
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>Ce projet m’a permis de travailler sur un <strong>projet complet de développement web full-stack</strong>, alliant à la fois des compétences techniques et une approche centrée sur l’utilisateur. La création du site de gestion et de vente pour <strong>“M’hira Boulangerie”</strong> m’a permis de mettre en pratique des connaissances en <strong>programmation backend</strong>, <strong>gestion de bases de données</strong>, <strong>design web</strong> et <strong>développement frontend</strong>, tout en respectant les attentes du client et les délais du projet. Cette expérience a été extrêmement formatrice et m’a donné une vision d’ensemble sur le développement de sites web professionnels.</p>
+        </div>
 
-    <h2>5. Rédaction de rapports et comptes rendus</h2>
-    <p>Tout au long de ce projet, j’ai rédigé des <strong>rapports</strong> et des <strong>comptes rendus</strong> détaillant la progression du développement, les choix techniques, ainsi que les problèmes rencontrés et les solutions apportées. Cela m’a permis de :</p>
-    <ul>
-        <li>Organiser efficacement mon travail et de rendre compte régulièrement à mon superviseur et à l’équipe projet.</li>
-        <li>Suivre les délais et ajuster les priorités en fonction des retours du client.</li>
-    </ul>
-    <p>Ces documents ont également facilité la communication avec l’équipe de développement et les responsables de la boulangerie, assurant ainsi une <strong>transparence</strong> sur l’avancement du projet.</p>
-
-    <h2>6. Technologies utilisées : PHP, CodeIgniter, Bootstrap, HTML/CSS, JavaScript</h2>
-    <p>Voici un récapitulatif des principales technologies que j’ai utilisées pour ce projet :</p>
-    <ul>
-        <li><strong>PHP</strong> pour la logique serveur et la gestion des interactions avec la base de données.</li>
-        <li><strong>CodeIgniter</strong> comme framework PHP pour structurer le projet selon le modèle MVC.</li>
-        <li><strong>Bootstrap</strong> pour la création d’une interface responsive et agréable pour l’utilisateur.</li>
-        <li><strong>HTML/CSS</strong> pour structurer le contenu et concevoir un design esthétique et fonctionnel.</li>
-        <li><strong>JavaScript</strong> pour l'interactivité et la gestion dynamique des éléments de la page, comme les paniers et les formulaires.</li>
-    </ul>
-
-    <h2>Conclusion</h2>
-    <p>Ce projet m’a permis de travailler sur un <strong>projet complet de développement web full-stack</strong>, alliant à la fois des compétences techniques et une approche centrée sur l’utilisateur. La création du site de gestion et de vente pour <strong>“M’hira Boulangerie”</strong> m’a permis de mettre en pratique des connaissances en <strong>programmation backend</strong>, <strong>gestion de bases de données</strong>, <strong>design web</strong> et <strong>développement frontend</strong>, tout en respectant les attentes du client et les délais du projet. Cette expérience a été extrêmement formatrice et m’a donné une vision d’ensemble sur le développement de sites web professionnels.</p>
-
-    <a href="index.html">Retour à la page d'accueil</a>
+        <a href="index.html">Retour à la page d'accueil</a>
+    </div>
 </body>
 </html>
