@@ -9,140 +9,132 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #2a5298, #1e3c72); /* Dégradé bleu pour un look professionnel */
+            background: linear-gradient(to bottom, #2c3e50, #4ca1af); /* Harmonisé avec apropos.html */
             color: #fff;
-            padding: 40px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            height: 100vh;
-            box-sizing: border-box;
+            line-height: 1.6;
         }
 
         h1 {
-            font-size: 2.8em;
+            font-size: 3em;
             margin-bottom: 20px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
         }
 
         h2 {
             font-size: 2em;
             margin-top: 30px;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            color: #f39c12;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         p, ul {
             font-size: 1.2em;
-            line-height: 1.8;
             max-width: 900px;
             text-align: justify;
             margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        strong {
+            color: #f39c12;
+            font-weight: bold;
         }
 
         ul {
-            margin-top: 10px;
             list-style: none;
-            padding: 0;
-            font-size: 1.1em;
+            padding-left: 0;
         }
 
         ul li {
             margin-bottom: 15px;
-            text-align: left;
-            padding-left: 20px;
             position: relative;
+            padding-left: 25px;
         }
 
         ul li::before {
-            content: "•";
-            color: #b3d4fc; /* Bleu clair pour les puces */
-            font-size: 1.5em;
+            content: "✔️";
             position: absolute;
             left: 0;
-            top: 0;
-        }
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            margin-top: 30px;
-            font-weight: bold;
-            font-size: 1.2em;
-            padding: 10px 20px;
-            background-color: #1e3c72; /* Fond bleu du bouton */
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        a:hover {
-            background-color: #b3d4fc; /* Couleur du bouton au survol */
-            color: #2a5298;
+            color: #f39c12;
+            font-size: 1.3em;
         }
 
         .section {
-            width: 100%;
-            margin-bottom: 50px;
-        }
-
-        .section p {
-            text-align: justify;
-        }
-
-        .container {
-            width: 100%;
             max-width: 1100px;
-            margin: 0 auto;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 30px;
+            display: inline-block;
+            border: 2px solid #f39c12;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #f39c12;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Stage de Développement Web PHP : Création d'un site de gestion et de vente pour la boulangerie “M’hira Boulangerie”</h1>
-        <p>Dans le cadre de mon stage de fin de <strong>licence en informatique</strong>, j’ai eu l'opportunité de travailler en tant que <strong>développeur web PHP</strong> pour la création d’un <strong>site de gestion et de vente en ligne</strong> pour la boulangerie <strong>“M’hira Boulangerie”</strong>. Ce projet m’a permis de développer une application web complète, répondant aux besoins spécifiques d'une entreprise locale cherchant à moderniser sa gestion de produits et ses ventes. Voici une description détaillée des différentes missions et compétences que j'ai acquises lors de ce stage.</p>
 
-        <div class="section">
-            <h2>1. Participation à l'élaboration des cahiers des charges</h2>
-            <p>La première étape du projet a été de participer à l'élaboration des <strong>cahiers des charges</strong>, un document essentiel pour définir les besoins du client et les spécifications fonctionnelles du site. En collaboration avec le client, nous avons déterminé :</p>
-            <ul>
-                <li>Les fonctionnalités nécessaires pour la gestion des produits (ajout, modification, suppression).</li>
-                <li>Les fonctionnalités de vente en ligne (gestion des commandes, intégration d’un panier, paiement sécurisé).</li>
-                <li>Les besoins en gestion des utilisateurs (administrateurs, clients, etc.).</li>
-                <li>Les exigences concernant l’interface utilisateur (facilité d’utilisation, accessibilité, design responsive).</li>
-            </ul>
-            <p>L'élaboration de ce cahier des charges m'a permis de comprendre l’importance de clarifier les attentes avant de commencer le développement, afin d’éviter toute ambiguïté et de mieux structurer le travail à venir.</p>
-        </div>
+    <h1>Stage de Développement Web PHP</h1>
 
-        <div class="section">
-            <h2>2. Conception et gestion de la base de données</h2>
-            <p>Une autre mission clé a été la <strong>conception et la gestion de la base de données</strong>. Dans cette partie du projet, j'ai travaillé à la création de la base de données qui allait supporter les informations essentielles du site, telles que :</p>
-            <ul>
-                <li>Les produits (nom, description, prix, stock, catégorie).</li>
-                <li>Les utilisateurs (administrateurs, clients).</li>
-                <li>Les commandes (produits commandés, quantité, montant total, statut de la commande).</li>
-                <li>Les paiements (détails de la transaction, méthode de paiement).</li>
-            </ul>
-            <p>J’ai utilisé <strong>MySQL</strong> pour concevoir la structure de la base de données et mettre en place des tables relationnelles optimisées. J'ai également écrit des requêtes SQL pour la gestion des transactions, l’ajout et la mise à jour des produits, ainsi que pour la récupération des informations nécessaires aux utilisateurs et aux administrateurs. Cette expérience m'a permis de me perfectionner dans la <strong>modélisation des bases de données</strong> et d’apprendre à optimiser les requêtes pour garantir des performances optimales du site.</p>
-        </div>
-
-        <div class="section">
-            <h2>3. Développement du site avec PHP et CodeIgniter</h2>
-            <p>En tant que développeur web PHP, j'ai utilisé le <strong>framework CodeIgniter</strong> pour structurer le développement de l'application. Ce choix de framework m’a permis de bénéficier d’un environnement robuste pour :</p>
-            <ul>
-                <li>Créer des <strong>contrôleurs</strong> et des <strong>modèles</strong> pour la gestion des utilisateurs, des produits et des commandes.</li>
-                <li>Utiliser des <strong>vues</strong> pour afficher dynamiquement les pages du site en fonction des données récupérées de la base de données.</li>
-                <li>Mettre en place une <strong>gestion des sessions utilisateurs</strong>, permettant aux clients de se connecter et de suivre leurs commandes en temps réel.</li>
-            </ul>
-            <p>Le framework <strong>CodeIgniter</strong> m'a facilité la gestion de l’architecture MVC (Modèle-Vue-Contrôleur), et m’a permis de respecter une <strong>approche modulaire</strong> pour améliorer la maintenance et l’évolutivité du projet.</p>
-        </div>
-
-        <div class="section">
-            <h2>Conclusion</h2>
-            <p>Ce projet m’a permis de travailler sur un <strong>projet complet de développement web full-stack</strong>, alliant à la fois des compétences techniques et une approche centrée sur l’utilisateur. La création du site de gestion et de vente pour <strong>“M’hira Boulangerie”</strong> m’a permis de mettre en pratique des connaissances en <strong>programmation backend</strong>, <strong>gestion de bases de données</strong>, <strong>design web</strong> et <strong>développement frontend</strong>, tout en respectant les attentes du client et les délais du projet. Cette expérience a été extrêmement formatrice et m’a donné une vision d’ensemble sur le développement de sites web professionnels.</p>
-        </div>
-
-        <a href="index.html">Retour à la page d'accueil</a>
+    <div class="section">
+        <h2>1. Participation à l'élaboration des cahiers des charges</h2>
+        <p>La première étape du projet a été de participer à l'élaboration des <strong>cahiers des charges</strong>, un document essentiel pour définir les besoins du client et les spécifications fonctionnelles du site. En collaboration avec le client, nous avons déterminé :</p>
+        <ul>
+            <li>Les fonctionnalités nécessaires pour la gestion des produits (ajout, modification, suppression).</li>
+            <li>Les fonctionnalités de vente en ligne (gestion des commandes, intégration d’un panier, paiement sécurisé).</li>
+            <li>Les besoins en gestion des utilisateurs (administrateurs, clients, etc.).</li>
+            <li>Les exigences concernant l’interface utilisateur (facilité d’utilisation, accessibilité, design responsive).</li>
+        </ul>
     </div>
+
+    <div class="section">
+        <h2>2. Conception et gestion de la base de données</h2>
+        <p>J’ai utilisé <strong>MySQL</strong> pour concevoir la base de données, comprenant :</p>
+        <ul>
+            <li>Les produits (nom, description, prix, stock, catégorie).</li>
+            <li>Les utilisateurs (administrateurs, clients).</li>
+            <li>Les commandes (produits commandés, quantité, montant total, statut de la commande).</li>
+            <li>Les paiements (détails de la transaction, méthode de paiement).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Développement du site avec PHP et CodeIgniter</h2>
+        <p>J'ai utilisé le <strong>framework CodeIgniter</strong> pour structurer le projet, en mettant en place :</p>
+        <ul>
+            <li>Des contrôleurs et modèles pour la gestion des utilisateurs, des produits et des commandes.</li>
+            <li>Des vues dynamiques pour afficher les pages en fonction des données récupérées.</li>
+            <li>Une gestion des sessions pour les utilisateurs connectés.</li>
+        </ul>
+    </div>
+
+    <a href="index.html">Retour à la page d'accueil</a>
+
 </body>
 </html>
