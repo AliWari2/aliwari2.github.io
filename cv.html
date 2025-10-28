@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #2c3e50, #4ca1af); /* Dégradé identique */
+            background: linear-gradient(to bottom, #2c3e50, #4ca1af);
             color: #fff;
             padding: 40px;
             display: flex;
@@ -19,47 +19,34 @@
             min-height: 100vh;
             box-sizing: border-box;
         }
-
         h1 {
             font-size: 3em;
             margin-bottom: 30px;
             text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-            color: #fff;
         }
-
         h2 {
             font-size: 2em;
             margin: 25px 0 15px 0;
-            color: #f39c12; /* Orange identique */
+            color: #f39c12;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
         p, ul {
             font-size: 1.2em;
             line-height: 1.8;
             max-width: 900px;
             text-align: left;
             margin-bottom: 20px;
-            color: #ecf0f1; /* Harmonisation du texte */
+            color: #ecf0f1;
         }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
+        ul { list-style: none; padding: 0; }
         ul li {
             margin-bottom: 15px;
             background: rgba(255, 255, 255, 0.1);
             padding: 10px;
             border-radius: 5px;
         }
-
-        ul li strong {
-            color: #f39c12; /* Orange identique */
-        }
-
+        ul li strong { color: #f39c12; }
         a {
             color: #f39c12;
             text-decoration: none;
@@ -71,88 +58,67 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-
-        a:hover {
-            background-color: #f39c12;
-            color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 2.2em;
-            }
-            h2 {
-                font-size: 1.6em;
-            }
-            p, ul {
-                font-size: 1em;
-                max-width: 100%;
-            }
-        }
+        a:hover { background-color: #f39c12; color: #fff; }
     </style>
 </head>
 <body>
     <h1>Ali Wari - Mon CV</h1>
 
+    <h2>Profil</h2>
+    <p>
+        Étudiant en <strong>Master Expert en Informatique et Systèmes d’Information à l’EPSI Rennes (2025-2027)</strong>, 
+        spécialisé en développement full-stack (React, Angular, Node.js, Spring Boot, Python), 
+        intéressé par le cloud (AWS/Azure), le DevOps (Docker, CI/CD) et l’IA appliquée (LLM, prompt engineering).
+        Je recherche une <strong>alternance de deux ans à partir de septembre 2025</strong>.
+    </p>
+
     <h2>Compétences Techniques</h2>
     <ul>
-        <li><strong>Langages :</strong> Java, Python, C, PHP (CodeIgniter), JavaScript (React.js, Node.js), SQL.</li>
-        <li><strong>Programmation :</strong> Solide maîtrise de la programmation orientée objet, modélisation UML, et création d’interfaces utilisateur ergonomiques.</li>
-        <li><strong>Développement Web :</strong> Expertise en HTML, CSS, JavaScript, avec intégration de maquettes et développement front-end et back-end.</li>
-        <li><strong>Bases de données :</strong> Conception et gestion relationnelle optimisée avec SQL.</li>
-        <li><strong>Outils :</strong> Utilisation d’outils collaboratifs tels que Git pour le versionnement, et JUnit pour les tests unitaires.</li>
+        <li><strong>Langages :</strong> Java, Python, C, PHP (CodeIgniter, Symfony), JavaScript, TypeScript, Kotlin.</li>
+        <li><strong>Web & Frameworks :</strong> React.js, Node.js, Angular, Bootstrap, HTML, CSS.</li>
+        <li><strong>Bases de données :</strong> SQL, MySQL, MariaDB, PostgreSQL.</li>
+        <li><strong>Outils :</strong> Docker, Git/GitHub, CI/CD, JUnit, intégration d’API.</li>
+        <li><strong>CRM :</strong> Salesforce (Apex, SOQL, intégration front/back).</li>
+        <li><strong>Cloud & IA :</strong> AWS, Azure, prompt engineering.</li>
     </ul>
 
-   <h2>Projets Réalisés</h2>
-        <ul>
-            <li><strong>Application de gestion des effectifs étudiants (2025) :</strong> Développement d'une application web complète (frontend + backend) pour la gestion académique.
-                <br><strong>Technologies :</strong> Spring Boot, Java, MySQL, Vue.js, Axios, Docker, Git/GitHub.
-                <br><strong>Fonctionnalités :</strong> CRUD complet, liaison étudiants-cours, validation des données, interface responsive.
-            </li>
-
-            <li><strong>Site de location immobilière (2024) :</strong> Développement d’un site permettant aux propriétaires de publier des annonces de logement, avec des fonctionnalités pour les chercheurs de logements, telles que la consultation des annonces, l’ajout aux favoris et la possibilité de contacter directement les propriétaires. 
-                <br><strong>Langages utilisés :</strong> React.js, Node.js, Express.js.
-            </li>
-        
-            <li><strong>Intégration de maquettes de site internet (2023) :</strong> Conversion de designs graphiques en pages web interactives, en assurant une expérience utilisateur fluide et ergonomique. Ce projet visait à respecter les normes d’accessibilité et de performance web.
-                <br><strong>Langages utilisés :</strong> HTML, CSS, JavaScript.
-            </li>
-        
-            <li><strong>Application web de validation de compétences (2024) :</strong> Création d’une application permettant aux responsables de formation d’évaluer les participants à travers un jeu de questions-réponses progressif. Chaque bonne réponse permet d’avancer dans le parcours jusqu’à la fin du test. 
-                <br><strong>Technologies utilisées :</strong> HTML, CSS, Bootstrap, JavaScript, PHP.
-                <br><strong>Code source :</strong> <a href="https://github.com/AliWari2/EscapeWeb.git" target="_blank">GitHub</a>.
-            </li>
-        
-            <li><strong>Application de gestion de formation (2024) :</strong> Projet universitaire en groupe visant à créer un système de gestion de formations. Les étudiants peuvent s’inscrire à une année de formation, choisir leurs unités d’enseignement et consulter les messages. Les responsables peuvent gérer les étudiants, les unités et organiser les groupes automatiquement.
-                <br><strong>Technologies utilisées :</strong> Java, Git, JUnit, JavaFX.
-            </li>
-        
-            <li><strong>Application de floutage d’image (2023) :</strong> Développement d’un logiciel permettant de flouter des images BMP. L’application permet de sélectionner une image depuis l’explorateur de fichiers et d’appliquer différents niveaux de flou en fonction des besoins.
-                <br><strong>Technologies utilisées :</strong> Programmation en C, Glade.
-                <br><strong>Code source :</strong> <a href="https://github.com/AliWari2/Degradation-de-l-image.git" target="_blank">GitHub</a>.
-            </li>
-        
-            <li><strong>Création du jeu Space Invaders (2024) :</strong> Développement d’une version du célèbre jeu Space Invaders en utilisant la programmation orientée objet. Les fonctionnalités incluent le déplacement des aliens, la logique de tir, la détection des collisions et la gestion des scores. Le code a été structuré en classes pour une meilleure maintenabilité.
-                <br><strong>Technologies utilisées :</strong> Python, Tkinter.
-            </li>
-        </ul>
-
+    <h2>Projets Réalisés</h2>
+    <ul>
+        <li><strong>Application de gestion des effectifs étudiants (2025) :</strong> Web app complète (Spring Boot, Java, MySQL, Vue.js, Docker). CRUD complet, gestion des cours, interface responsive.</li>
+        <li><strong>Application SaaS de location immobilière (2025) :</strong> Plateforme pour publier et rechercher des logements, favoris, contact direct. <em>Stack : React.js, Node.js, Express.js.</em></li>
+        <li><strong>Application mobile Kotlin (2024) :</strong> Jeu éducatif sur les capitales du monde (Android Studio, Kotlin, Firebase) avec quiz interactif et sauvegarde des scores.</li>
+        <li><strong>Site e-commerce Boulangerie (2023) :</strong> Développement front et back (PHP, Symfony, Bootstrap, MySQL) pour gérer produits et ventes.</li>
+        <li><strong>Validation de compétences (2024) :</strong> Application web QCM (HTML, CSS, Bootstrap, PHP, JS). <a href="https://github.com/AliWari2/EscapeWeb.git" target="_blank">GitHub</a>.</li>
+        <li><strong>Application de formation (2024) :</strong> Gestion étudiants, unités et groupes (Java, JavaFX, JUnit, Git).</li>
+        <li><strong>Application de floutage d’image (2023) :</strong> Flou sur images BMP (C, Glade). <a href="https://github.com/AliWari2/Degradation-de-l-image.git" target="_blank">GitHub</a>.</li>
+        <li><strong>Jeu Space Invaders (2023) :</strong> Jeu POO en Python/Tkinter (mouvements, tirs, collisions, scores).</li>
+    </ul>
 
     <h2>Expériences Professionnelles</h2>
     <ul>
-        <li><strong>Stage Capgemini – Consultant CRM Salesforce (2025) :</strong> Développement et test de composants web pour optimiser la gestion des relations clients de la SNCF (indemnisations, bons digitaux). <em>Environnement : Apex, JavaScript, SOQL, Git.</em></li>
-        <li><strong>Stage de Licence :</strong> Développement d'un site web pour la gestion et la vente de produits d’une boulangerie, utilisant PHP et le framework CodeIgniter.</li>
-        <li><strong>Employé Polyvalent :</strong> Expérience chez Dominos Pizza depuis septembre 2022, avec des responsabilités croissantes incluant la gestion du service en l’absence du manager.</li>
+        <li><strong>Stage Capgemini – Consultant CRM Salesforce (Avril – Août 2025) :</strong> Développement et tests de composants web pour la SNCF (indemnisations, bons digitaux). <em>Apex, JavaScript, SOQL, Git.</em></li>
+        <li><strong>Stage en développement web PHP :</strong> Création d’un site de gestion et de vente de produits avec intégration de base de données et front/back en PHP.</li>
+        <li><strong>Employé Polyvalent – Domino’s Pizza (depuis 2022) :</strong> Gestion du service en autonomie, encadrement de l’équipe en l’absence du manager.</li>
     </ul>
 
     <h2>Formation</h2>
     <ul>
-        <li><strong>Master en Ingénierie Logicielle :</strong> Actuellement en cours à l'Université de Bretagne Occidentale (2024 - 2026).</li>
-        <li><strong>Licence en Informatique :</strong> Diplôme obtenu à l’Université de Bretagne Occidentale (2021 - 2024).</li>
-        <li><strong>Baccalauréat Scientifique :</strong> Série D, Lycée Les Étoiles Brillantes (2020).</li>
+        <li><strong>Master Expert en Informatique & Systèmes d’Information :</strong> EPSI Rennes (2025 – 2027).</li>
+        <li><strong>Licence Informatique – Fondements et Applications :</strong> Université de Bretagne Occidentale, Brest (2021 – 2024).</li>
+        <li><strong>Baccalauréat Scientifique :</strong> Lycée Les Étoiles Brillantes, N’Djamena (2020).</li>
+    </ul>
+
+    <h2>Langues</h2>
+    <ul>
+        <li><strong>Français :</strong> courant</li>
+        <li><strong>Anglais :</strong> avancé</li>
+    </ul>
+
+    <h2>Centres d’intérêt</h2>
+    <ul>
+        <li>Football ⚽</li>
+        <li>Natation 🏊</li>
+        <li>Voyages 🌍</li>
     </ul>
 
     <a href="index.html">Retour à la page d'accueil</a>
